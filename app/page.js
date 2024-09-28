@@ -5,16 +5,17 @@ import videos from './data/video.js'; // Import video data
 export default function Home() {
   return (
     <div>
-      <h1>Project X </h1>
+      <h1>Project X</h1>
       <br></br>
       <br></br>
-      <div 
-        style={{ 
-          display: "grid", 
-          gridTemplateColumns: "repeat(5, 1fr)", 
-          gap: "20px", 
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)", // Set to 2 columns
+          gap: "20px", // Space between videos
           marginBottom: "20px",
-          maxWidth: "100%", // Adjust to screen width
+          maxWidth: "100%", // Ensure full width scaling
+          justifyItems: "center", // Center the items
         }}
       >
         {videos.map((video) => (
