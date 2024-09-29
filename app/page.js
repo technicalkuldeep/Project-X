@@ -28,13 +28,9 @@ export default function Home() {
         } else {
             alert("Invalid video ID. Please enter a number between 1 and 11."); // Alert for invalid input
         }
-        setVideoIdInput(""); // Clear input field
+        setVideoIdInput(""); 
     };
 
-    // If session is loading
-    if (status === 'loading') {
-        return <div>Loading...</div>;
-    }
 
     return (
         <div>
@@ -46,8 +42,6 @@ export default function Home() {
                 </div>
             ) : ( // If logged in, show the main content
                 <>
-                    <h1>Project X</h1>
-                    <br />
                     <br />
                     <form onSubmit={handleVideoIdSubmit} style={{ textAlign: 'center' }}>
                         <label>
