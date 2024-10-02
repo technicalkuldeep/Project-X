@@ -14,7 +14,7 @@ export default function Home() {
     const handleVideoEnd = () => {
         setCurrentVideoIndex((prevIndex) => {
             if (prevIndex < videos.length - 1) {
-                return prevIndex + 1; 
+                prevIndex = prevIndex + 1; 
             }
             return prevIndex; 
         });
